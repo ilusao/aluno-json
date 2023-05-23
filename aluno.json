@@ -1,0 +1,60 @@
+{
+  "aluno": [
+    {
+      "id": 1,
+      "name": "julio",
+      "email": "julio@gmail.com",
+      "gender": "masculino",
+      "rg": "432432432-3",
+      "cpf": "432432432-43"
+    },
+    {
+      "id": 2,
+      "name": "ana",
+      "email": "ana@gmail.com",
+      "gender": "feminino",
+      "rg": "234234234-4",
+      "cpf": "234234234-34"
+    },
+    {
+      "id": 3,
+      "name": "andré",
+      "email": "andre@gmail.com",
+      "gender": "masculino",
+      "rg": "3434343434",
+      "cpf": "123123123123"
+    },
+    {
+      "id": 4,
+      "name": "andré",
+      "email": "andre@gmail.com",
+      "gender": "masculino",
+      "rg": "3434343434",
+      "cpf": "123123123123"
+    },
+    {
+      "id": 5,
+      "name": "andré",
+      "email": "andre@gmail.com",
+      "gender": "Masculino",
+      "rg": "3434343434",
+      "cpf": "123123123123"
+    },
+    {
+      "id": 6,
+      "name": "",
+      "email": "",
+      "gender": "prefere não comentar",
+      "rg": "",
+      "cpf": ""
+    },
+    {
+      "id": 7,
+      "name": "andré",
+      "email": "andre@gmail.com",
+      "gender": "Masculino",
+      "rg": "3434343434",
+      "cpf": "123123123123"
+    }
+  ]
+}

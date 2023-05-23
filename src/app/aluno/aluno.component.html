@@ -1,0 +1,65 @@
+<body style="color: black;">
+<div class="row">
+  <div class="col-8 m-auto">
+      <form [formGroup]="grupoAluno">
+
+        <div class="form-group">
+          <label for="Email">Nome :</label>
+          <input type="text" formControlName="name" class="form-control" id="Nome do aluno" aria-describedby="Nome" placeholder="Seu Nome">
+        </div>
+        <div class="form-group">
+          <label for="Email">Endereço de email :</label>
+          <input type="email" formControlName="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Seu email">
+          <small id="emailHelp" class="form-text text-muted">Nunca vamos compartilhar seu email, com ninguém.</small>
+        </div>
+        <div class="form-group">
+          <label for="Genero">Genero :</label>
+          <select class="form-select" aria-label="Default select example" type="select" formControlName="gender" class="form-control" id="Genero do aluno" aria-describedby="GENERO">
+            <option value="Masculino">Masculino</option>
+            <option value="Feminino">Feminino</option>
+            <option value="prefere não comentar">Prefere não comentar</option>
+        </select>
+      </div>
+        <div class="form-group">
+          <label for="Email">RG :</label>
+          <input type="text" formControlName="rg" class="form-control" id="RG do aluno" aria-describedby="RG" placeholder="Seu RG">
+          <small id="rg" class="form-text text-muted">Nunca vamos compartilhar seu RG, com ninguém.</small>
+        </div>
+        <div class="form-group">
+          <label for="CPF">CPF :</label>
+          <input type="text" formControlName="cpf" class="form-control" id="CPF do aluno" aria-describedby="cpf" placeholder="Seu CPF">
+          <small id="cpf" class="form-text text-muted">Nunca vamos compartilhar seu CPF, com ninguém.</small>
+        </div>
+
+        <div class="mb-3 d-flex justify-content-end">
+          <button class="btn btn-outline-primary" (click)="save()" >Salvar</button>
+
+        </div>
+      </form>
+  </div>
+</div>
+
+<table class="table table-bordered border-primary">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Nome</th>
+      <th scope="col">Email</th>
+      <th scope="col">Genero</th>
+      <th scope="col">RG</th>
+      <th scope="col">CPF</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let Aluno of aluno">
+      <th scope="row">{{Aluno.id}}</th>
+      <td>{{Aluno.name}}</td>
+      <td>{{Aluno.email}}</td>
+      <td>{{Aluno.gender}}</td>
+      <td>{{Aluno.rg}}</td>
+      <td>{{Aluno.cpf}}</td>
+    </tr>
+
+  </tbody>
+</table>
+</body>
